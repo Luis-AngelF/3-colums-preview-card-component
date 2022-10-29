@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+
+    --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+    --VeryLightGray: hsl(0, 0%, 95%);
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--VeryLightGray);
+}
+
+.cards {
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card {
+    padding: 30px;
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: var(--VeryLightGray);
+    padding-top: 20px;
+}
+
+.card-description {
+    color: var(--TransparentWhite);
+    padding-top: 20px;
+    line-height: 1.5em;
+}
+
+.card-button {
+    all: unset;
+    margin-top: 20px;
+    padding: 15px 25px;
+    mix-blend-mode: screen;
+    text-transform: capitalize;
+    border-radius: 50px;
+    background-color: var(--VeryLightGray);
+    border: 2px solid transparent;
+}
+
+.card-button:hover {
+    background-color: transparent;
+    color: var(--VeryLightGray);
+    border: 2px solid var(--VeryLightGray);
+    cursor: pointer;
+}
+
+.color1 {
+    background-color: var(--BrightOrange);
+}
+
+.color2 {
+    background-color: var(--DarkCyan);
+}
+
+.color3 {
+    background-color: var(--VeryDarkCyan);
+}
+
+.attribution {
+    text-align: center;
+}
+
+.attribution p {
+    line-height: 1.3em;
+    color: black;
+    font-weight: 700;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        display: flex;
+        max-width: 800px;
+        margin: 25vh auto;
+    }
+}
